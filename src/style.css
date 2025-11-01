@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f6f8;
+}
+
+.boards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #e0e0e0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cell.ship {
+  background: #a0c4ff;
+}
+
+.cell.hit {
+  background: #ff4d4d;
+}
+
+.cell.miss {
+  background: #ccc;
+}
